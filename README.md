@@ -18,7 +18,7 @@ cd src/core/plugins
 **SSH**
 
 ```
-git@github.com:Stuyk/athena-plugin-dealership.git
+git clone git@github.com:Stuyk/athena-plugin-dealership.git
 ```
 
 **HTTPS**
