@@ -1,11 +1,11 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
-import { WebViewController } from '../../../../client/extensions/view2';
-import ViewModel from '../../../../client/models/viewModel';
-import { CinematicCam } from '../../../../client/utility/cinematic';
-import { isAnyMenuOpen } from '../../../../client/utility/menus';
-import { loadModel } from '../../../../client/utility/model';
-import { VehicleInfo } from '../../../../shared/interfaces/vehicleInfo';
+import { WebViewController } from '@AthenaClient/extensions/view2';
+import ViewModel from '@AthenaClient/models/viewModel';
+import { CinematicCam } from '@AthenaClient/utility/cinematic';
+import { isAnyMenuOpen } from '@AthenaClient/utility/menus';
+import { loadModel } from '@AthenaClient/utility/model';
+import { VehicleInfo } from '@AthenaShared/interfaces/vehicleInfo';
 import { DEALERSHIP_EVENTS, DEALERSHIP_WEBVIEW_EVENTS } from '../../shared/events';
 import { IDealership } from '../../shared/interfaces';
 

@@ -1,8 +1,7 @@
 import * as alt from 'alt-server';
-import { Athena } from '../../../../server/api/athena';
-import { PlayerEvents } from '../../../../server/events/playerEvents';
-import { ATHENA_EVENTS_PLAYER } from '../../../../shared/enums/athenaEvents';
-import { VehicleInfo } from '../../../../shared/interfaces/vehicleInfo';
+import { Athena } from '@AthenaServer/api/athena';
+import { ATHENA_EVENTS_PLAYER } from '@AthenaShared/enums/athenaEvents';
+import { VehicleInfo } from '@AthenaShared/interfaces/vehicleInfo';
 import { DEALERSHIP_EVENTS } from '../../shared/events';
 import { IDealership } from '../../shared/interfaces';
 import { DEALERSHIP_LOCALE } from '../../shared/locale';
@@ -154,6 +153,6 @@ export class DealershipView {
 
         Athena.player.emit.notification(player, DEALERSHIP_LOCALE.VEHICLE_MOVED_TO_NEAREST_GARAGE);
         Athena.player.emit.sound2D(player, 'item_purchase');
-        PlayerEvents.trigger(ATHENA_EVENTS_PLAYER.PURCHASED_VEHICLE, player, vehicleInfo.name);
+        Athena.events.player.trigger(ATHENA_EVENTS_PLAYER.PURCHASED_VEHICLE, player, vehicleInfo.name);
     }
 }

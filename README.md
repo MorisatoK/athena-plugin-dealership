@@ -1,6 +1,6 @@
 # Athena Plugin - Dealership
 
-A simple dealership plugin for the Athena Framework compatible with `3.9.0` of the [Athena Framework](https://athenaframework.com/).
+A simple dealership plugin for the Athena Framework compatible with `4.0.0` of the [Athena Framework](https://athenaframework.com/).
 
 Allows users to purchase vehicles.
 
@@ -18,12 +18,12 @@ cd src/core/plugins
 **SSH**
 
 ```
-git clone git@github.com:Stuyk/athena-plugin-dealership.git
+git clone git@github.com:Athena-Roleplay-Framework/athena-plugin-dealership.git
 ```
 
 **HTTPS**
 ```
-git clone https://github.com/Stuyk/athena-plugin-dealership
+git clone https://github.com/Athena-Roleplay-Framework/athena-plugin-dealership
 ```
 
 4. Start the Server
