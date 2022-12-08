@@ -1,5 +1,5 @@
-import { VEHICLE_CLASS } from '../../../../shared/enums/vehicleTypeFlags';
-import { VehicleData } from '../../../../shared/information/vehicles';
+import { VEHICLE_CLASS } from '@AthenaShared/enums/vehicleTypeFlags';
+import { VehicleData } from '@AthenaShared/information/vehicles';
 import { IDealership } from '../../shared/interfaces';
 import { DealershipView } from './view';
 
