@@ -34,12 +34,12 @@ class InternalFunctions {
             pos: dealership.pos,
             shortRange: true,
             scale: 1,
-            sprite: 669,
+            sprite: dealership.blip ? dealership.blip : 669, // Use from dealership, otherwise car icon
         });
 
         Athena.controllers.marker.append({
             uid: dealership.uid,
-            type: 36,
+            type: dealership.marker ? dealership.marker : 36, // Use from dealership, otherwise car shape
             color: new alt.RGBA(0, 255, 0, 100),
             pos: new alt.Vector3(dealership.pos.x, dealership.pos.y, dealership.pos.z + 0.5),
             maxDistance: 25,

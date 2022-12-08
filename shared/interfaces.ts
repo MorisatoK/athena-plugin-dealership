@@ -1,4 +1,5 @@
 import * as alt from 'alt-shared';
+import { MARKER_TYPE } from '@AthenaShared/enums/markerTypes';
 import { VehicleInfo } from '@AthenaShared/interfaces/vehicleInfo';
 
 export interface IDealership {
@@ -49,4 +50,20 @@ export interface IDealership {
      * @memberof IDealership
      */
     vehicles: Array<VehicleInfo>;
+
+    /**
+     * Optional blip used on map.
+     *
+     * @type {number}
+     * @memberof IDealership
+     */
+    blip?: number;
+
+    /**
+     * Optional marker used in world.
+     *
+     * @type {MARKER_TYPE}
+     * @memberof IDealership
+     */
+    marker?: MARKER_TYPE;
 }
