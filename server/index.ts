@@ -8,5 +8,5 @@ const PLUGIN_NAME = 'Athena Dealership';
 PluginSystem.registerPlugin(PLUGIN_NAME, async () => {
     DealershipView.init();
     DefaultDealerships.init();
-    alt.log(`~lg~CORE ==> ${PLUGIN_NAME} was Loaded`);
+    alt.log(`~lg~${PLUGIN_NAME} was Loaded`);
 });
